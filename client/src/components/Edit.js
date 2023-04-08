@@ -36,7 +36,7 @@ const Edit = () => {
 
     const getData = async () => {
 
-        const res = await fetch(`/getuser/${id}`, {
+        const res = await fetch(`https://redpositive-cruds-backend.onrender.com/getuser/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -63,7 +63,7 @@ const Edit = () => {
 
         const { name, phone, email, hobbies } = inpVal;
 
-        const res2 = await fetch(`/updateuser/${id}`, {
+        const res2 = await fetch(`https://redpositive-cruds-backend.onrender.com/updateuser/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

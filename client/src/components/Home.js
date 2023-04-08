@@ -20,7 +20,7 @@ const Home = () => {
 
     const getData = async (e) => {
 
-        const res = await fetch('/getdata', {
+        const res = await fetch('https://redpositive-cruds-backend.onrender.com/getdata', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -51,12 +51,12 @@ const Home = () => {
             users: users,
         };
 
-        emailjs.send('service_kunfsyl', 'template_lewh2wq', templateParams, 'nd4K_Db0mDZIMFLfN')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        // emailjs.send('service_kunfsyl', 'template_lewh2wq', templateParams, 'nd4K_Db0mDZIMFLfN')
+        //     .then((result) => {
+        //         console.log(result.text);
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
 
         alert("Selected Data Send Successfully!!");
 
@@ -68,7 +68,7 @@ const Home = () => {
 
     const deleteUser = async (id) => {
 
-        const res2 = await fetch(`/deleteuser/${id}`, {
+        const res2 = await fetch(`https://redpositive-cruds-backend.onrender.com/deleteuser/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"

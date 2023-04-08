@@ -31,7 +31,7 @@ const Register = () => {
 
         const { name, phone, email, hobbies } = inpVal;
 
-        const res = await fetch('/register', {
+        const res = await fetch('https://redpositive-cruds-backend.onrender.com/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

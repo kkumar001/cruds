@@ -20,7 +20,7 @@ const Details = () => {
 
   const getData = async () => {
 
-    const res = await fetch(`/getuser/${id}`, {
+    const res = await fetch(`https://redpositive-cruds-backend.onrender.com/getuser/${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -44,7 +44,7 @@ const Details = () => {
 
   const deleteUser = async (id) => {
 
-    const res2 = await fetch(`/deleteuser/${id}`, {
+    const res2 = await fetch(`https://redpositive-cruds-backend.onrender.com/deleteuser/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
