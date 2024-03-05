@@ -51,12 +51,12 @@ const Home = () => {
             users: users,
         };
 
-        // emailjs.send('service_kunfsyl', 'template_lewh2wq', templateParams, 'nd4K_Db0mDZIMFLfN')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.send('service_kunfsyl', 'template_lewh2wq', templateParams, 'nd4K_Db0mDZIMFLfN')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         alert("Selected Data Send Successfully!!");
 
